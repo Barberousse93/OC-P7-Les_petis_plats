@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+    /* Variables */
+    --couleurLogo: #D04F4F;
+    --color1: #3282F7;
+    --color2: #68D9A4;
+    --color3: #ED6454;
+}
+
+body {
+    margin: auto;
+    background-color: #E5E5E5;
+    max-width: 1440px;
+    max-height: 1024px;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-family: 'DM sans', 'sans-serif';
+    color: var(--couleurLogo);
+}
+
+.searchZone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchZone .inputZone {
+    background-color: blue;
+    margin: auto;
+}
+
+.searchZone label {
+    position: absolute;
+    left: 10%;
+    color: #C7BEBE;
+    font-family: 'lato', 'sans-serif';
+    font-weight: 400;
+    line-height: 70px;
+    transition: all 0.3s ease-in-out;
+}
+
+.searchZone img {
+    position: absolute;
+    top: 15%;
+    right: 9%;
+}
+
+#searchZoneTexte {
+    margin: auto;
+    width: 1240px;
+    height: 70px;
+    border-radius: 5px;
+    /* border:none; */
+    background-color: #e7e7e7;
+    padding-left: 10px;
+}
+
+#searchZoneTexte:focus~label,
+#searchZoneTexte:valid~label {
+    color: #000;
+    transform: translateY(-50px);
+}
+
+#listBoxZone {
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 1240px;
+    height: 70px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.listbox {
+    position: relative;
+    width: 170px;
+    height: 70px;
+    font-family: 'lato', 'sans-serif';
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    line-height: 70px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-right: 20px;
+}
+
+.dropdownIcone {
+    position: absolute;
+    right: 0px;
+    content: url(/assets/icones/dropdowon.png);
+    padding: 20px;
+    top: 10px;
+}
+
+.dropupIcone {
+    content: url(/assets/icones/dropup.png);
+    padding: 20px;
+}
+
+.color1 {
+    background-color: var(--color1);
+}
+
+.color2 {
+    background-color: var(--color2);
+}
+
+.color3 {
+    background-color: var(--color3);
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    position: absolute;
+    font-weight: 400;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: left;
+
+}
+
+li {
+    list-style: none;
+    line-height: 50px;
+    height: 50px;
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 5px;
+    /* height: auto; */
+}
+
+.listbox:hover {
+    opacity: 0.8;
+}
+
+li:hover {
+    opacity: 0.8;
+}
