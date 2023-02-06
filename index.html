@@ -23,28 +23,15 @@
         <div class="inputZone">
             <input id="searchZoneTexte" type="text" class="inputText" required>
             <label for="searchZoneTexte">Rechercher une recette</label>
-            <img src="./assets/icones/search.png" alt="">
+            <img class="searchImg" src="./assets/icones/search.png" alt="">
         </div>
-        <div id="tagZone"></div>
+        <div id="tagZone"> </div>
+        </div>
         <div id="listBoxZone">
             <div id="ingredients" class="listbox color1">Ingredients
                 <span class="dropdownIcone"></span>
                 <ul class="listeIngredients hidden">
                     <li class="itemListe color1">Item 1</li>
-                    <li class="itemListe color1">Item 2</li>
-                    <li class="itemListe color1">Item 3</li>
-                    <li class="itemListe color1">Item 4</li>
-                    <li class="itemListe color1">Item 5</li>
-                    <li class="itemListe color1">Item 6</li>
-                    <li class="itemListe color1">Item 7</li>
-                    <li class="itemListe color1">Item 8</li>
-                    <li class="itemListe color1">Item 9</li>
-                    <li class="itemListe color1">Item 10</li>
-                    <li class="itemListe color1">Item 11</li>
-                    <li class="itemListe color1">Item 12</li>
-                    <li class="itemListe color1">Item 13</li>
-                    <li class="itemListe color1">Item 14</li>
-                    <li class="itemListe color1">Item 15</li>
                 </ul>
             </div>
 
@@ -52,40 +39,12 @@
                 <span class="dropdownIcone"></span>
                 <ul class="listeApareils hidden">
                     <li class="itemListe color2">Item 1</li>
-                    <li class="itemListe color2">Item 2</li>
-                    <li class="itemListe color2">Item 3</li>
-                    <li class="itemListe color2">Item 4</li>
-                    <li class="itemListe color2">Item 5</li>
-                    <li class="itemListe color2">Item 6</li>
-                    <li class="itemListe color2">Item 7</li>
-                    <li class="itemListe color2">Item 8</li>
-                    <li class="itemListe color2">Item 9</li>
-                    <li class="itemListe color2">Item 10</li>
-                    <li class="itemListe color2">Item 11</li>
-                    <li class="itemListe color2">Item 12</li>
-                    <li class="itemListe color2">Item 13</li>
-                    <li class="itemListe color2">Item 14</li>
-                    <li class="itemListe color2">Item 15</li>
                 </ul>
             </div>
             <div id="ustensiles" class="listbox color3">Ustensiles
                 <span class="dropdownIcone"></span>
                 <ul class="listeUstensiles hidden">
                     <li class="itemListe color3">Item 1</li>
-                    <li class="itemListe color3">Item 2</li>
-                    <li class="itemListe color3">Item 3</li>
-                    <li class="itemListe color3">Item 4</li>
-                    <li class="itemListe color3">Item 5</li>
-                    <li class="itemListe color3">Item 6</li>
-                    <li class="itemListe color3">Item 7</li>
-                    <li class="itemListe color3">Item 8</li>
-                    <li class="itemListe color3">Item 9</li>
-                    <li class="itemListe color3">Item 10</li>
-                    <li class="itemListe color3">Item 11</li>
-                    <li class="itemListe color3">Item 12</li>
-                    <li class="itemListe color3">Item 13</li>
-                    <li class="itemListe color3">Item 14</li>
-                    <li class="itemListe color3">Item 15</li>
                 </ul>
             </div>
         </div>
@@ -95,8 +54,11 @@
 
         </article>
     </main>
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/utils/fetch.js"></script>
+    <script src="./scripts/utils/arrays.js"></script>
+    <script type="module" src="./data/recipes.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/constructors/filtersListe.js"></script>
+    <script type="module" src="./scripts/constructors/tagButtons.js"></script>
 </body>
 
 </html>
