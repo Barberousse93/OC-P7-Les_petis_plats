@@ -9,6 +9,8 @@
     --color1: #3282F7;
     --color2: #68D9A4;
     --color3: #ED6454;
+    --cardBackground: #C7BEBE;
+    --recipeBackground: #e7e7e7;
 }
 
 body {
@@ -95,6 +97,7 @@ header h1 {
     border-radius: 5px;
     padding-left: 10px;
     margin-right: 20px;
+    z-index: 2;
 }
 
 .dropdownIcone {
@@ -148,6 +151,7 @@ li {
     font-family: 'lato', 'sans-serif';
     color: #fff;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .listbox:hover {
@@ -187,4 +191,99 @@ li:hover {
     top: 5px;
     right: -15px;
     cursor: pointer;
+}
+
+main {
+    width: 1240px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.card {
+    position: relative;
+    width: 380px;
+    height: 384px;
+    background-color: var(--cardBackground);
+}
+
+.recipe {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: inherit;
+    height: 206px;
+    background-color: var(--recipeBackground);
+    bottom: 0;
+}
+
+.cadre {
+    height: 178px;
+    background-color: var(--cardBackground);
+}
+
+.recipeheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.recipetitle {
+    font-family: 'lato', 'sans-serif';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+
+}
+
+.recipetime {
+    font-family: 'lato', 'sans-serif';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.recipetime:before {
+    content: url(/assets/icones/clock.png);
+    padding-right: 5px;
+}
+
+.recipedetail {
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.recipeingredients,
+.recipedescription {
+    width: 171px;
+    height: 155px;
+}
+
+.recipedescription {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+
+    overflow: auto;
+    text-overflow: ellipsis;
+
+}
+
+.recipeingredient {
+    font-family: 'lato', 'sans-serif';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.quantite {
+    font-family: 'lato', 'sans-serif';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
 }

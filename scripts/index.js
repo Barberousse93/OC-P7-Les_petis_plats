@@ -3,6 +3,9 @@
 import { recipes } from '../data/recipes.js'
 import { makeDOM } from './constructors/filtersListe.js'
 import { makeTagButton } from './constructors/tagButtons.js'
+import { makeRecipeCard } from './constructors/cards.js'
+
+sortRecipes(recipes)
 
 // Gestion des événements des listes déroulantes de filtres
 
@@ -24,7 +27,7 @@ function GestionBoutonFiltre(bouton, liste) {
 async function GestionClickItemListe(liste) {
   for (let i = 0; i < liste.length; i++) {
     liste[i].addEventListener('click', (e) => {
-      e.preventDefault()
+      e.stopPropagation()
       liste[i].classList.add('hidden')
       makeTagButton(liste[i])
     })
@@ -78,11 +81,20 @@ async function ListeUstensiles() {
   applianceList.appendChild(DOMUstensiles)
 }
 
+function recipesCards() {
+  const main = document.querySelector('main')
+  main.innerHTML = ''
+  for (let i = 0; i < recipes.length; i++) {
+    makeRecipeCard(recipes[i])
+  }
+}
+
 async function init() {
   ListeIngredients()
   ListeApareils()
   ListeUstensiles()
   addEventsButtonsFilter()
+  recipesCards()
 }
 
 init()
