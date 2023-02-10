@@ -1,6 +1,4 @@
 export function makeRecipeCard (recette) {
-  console.log(recette)
-  // return new Promise(resolve => {
   const main = document.querySelector('main')
   const card = document.createElement('article')
   card.classList.add('card')

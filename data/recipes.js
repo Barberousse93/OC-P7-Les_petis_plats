@@ -21,7 +21,7 @@ export const recipes = [
       {
         ingredient: 'Sucre',
         quantity: 30,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Glaçons'
@@ -40,14 +40,14 @@ export const recipes = [
       {
         ingredient: 'Thon Rouge (ou blanc)',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Concombre',
         quantity: 1
       },
       {
-        ingredient: 'Tomate',
+        ingredient: 'Tomates',
         quantity: 2
       },
       {
@@ -83,7 +83,7 @@ export const recipes = [
         unit: 'ml'
       },
       {
-        ingredient: 'Coulis de tomate',
+        ingredient: 'Coulis de tomates',
         quantity: 25,
         unit: 'cl'
       },
@@ -102,7 +102,7 @@ export const recipes = [
       }
     ],
     time: 80,
-    description: "Découper le poulet en morceaux, les faire dorer dans une cocotte avec de l'huile d'olive. Salez et poivrez. Une fois doré, laisser cuire en ajoutant de l'eau. Au bout de 30 minutes, ajouter le coulis de tomate, le lait de coco ainsi que le poivron et l'oignon découpés en morceaux. Laisser cuisiner 30 minutes de plus. Servir avec du riz",
+    description: "Découper le poulet en morceaux, les faire dorer dans une cocotte avec de l'Huile d'olive. Salez et poivrez. Une fois doré, laisser cuire en ajoutant de l'eau. Au bout de 30 minutes, ajouter le coulis de tomates, le lait de coco ainsi que le poivron et l'oignon découpés en morceaux. Laisser cuisiner 30 minutes de plus. Servir avec du riz",
     appliance: 'Cocotte',
     ustensils: ['couteau']
   }, {
@@ -113,14 +113,14 @@ export const recipes = [
       {
         ingredient: 'Riz blanc',
         quantity: 500,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Thon en miettes',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       }, {
-        ingredient: 'Tomate',
+        ingredient: 'Tomates',
         quantity: 2
       },
       {
@@ -130,7 +130,7 @@ export const recipes = [
       {
         ingredient: 'Maïs',
         quantity: 300,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Vinaigrette',
@@ -155,10 +155,10 @@ export const recipes = [
       {
         ingredient: 'Thon en miettes',
         quantity: 130,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
-        ingredient: 'Tomate',
+        ingredient: 'Tomates',
         quantity: 2
       },
       {
@@ -167,9 +167,9 @@ export const recipes = [
         unit: 'cuillères à soupe'
       },
       {
-        ingredient: 'gruyère râpé',
+        ingredient: 'Gruyère râpé',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Moutarde de Dijon',
@@ -178,7 +178,7 @@ export const recipes = [
       }
     ],
     time: 45,
-    description: 'Étaler la pâte feuilleté aux dimensions du moule, étaler la moutarde sur la pâte feuilleté, ajouter le thon. Découper les tomates en rondelles et les poser sur le poisson, ajouter un peu de crème fraîche sur toute la tarte et recouvrez de gruyère râpé. Cuire au four 30 minutes',
+    description: 'Étaler la pâte feuilleté aux dimensions du moule, étaler la moutarde sur la pâte feuilleté, ajouter le thon. Découper les tomates en rondelles et les poser sur le poisson, ajouter un peu de crème fraîche sur toute la tarte et recouvrez de Gruyère râpé. Cuire au four 30 minutes',
     appliance: 'Four',
     ustensils: ['moule à tarte', 'râpe à fromage', 'couteau']
   },
@@ -207,7 +207,7 @@ export const recipes = [
       {
         ingredient: 'Sucre en Poudre',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre vanillé',
@@ -232,7 +232,7 @@ export const recipes = [
       {
         ingredient: 'Chocolat au lait',
         quantity: 300,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Crème liquide',
@@ -242,7 +242,7 @@ export const recipes = [
       {
         ingredient: 'Beurre',
         quantity: '30',
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Fraise',
@@ -261,17 +261,17 @@ export const recipes = [
       {
         ingredient: 'Noix',
         quantity: '180',
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Chocolat noir',
         quantity: 150,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Beurre',
         quantity: 120,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oeuf',
@@ -280,17 +280,17 @@ export const recipes = [
       {
         ingredient: 'Sucre en Poudre',
         quantity: '110',
-        unit: 'grammes'
+        unit: 'g'
       },
       {
-        ingredient: 'farine',
+        ingredient: 'Farine',
         quantity: 90,
-        unit: 'grammes'
+        unit: 'g'
       }
 
     ],
     time: 60,
-    description: "Hachez les noix grossièrement. Faire fondre le chocolat avec le beurre. Mélanger les oeufs et le sucre et mélanger au chocolat. Ajouter la farine. Mélanger afin d'avoir quelque chose d'homogène puis incorporer les noix. Verser la préparation dans un moule de préférence rectangulaire. Cuire 2O à 25 minutes à 180°. Sortez du four et attendez quelques minutes pour démouler. Servir avec une boule de glace pour plus de gourmandise.",
+    description: "Hachez les noix grossièrement. Faire fondre le chocolat avec le beurre. Mélanger les oeufs et le sucre et mélanger au chocolat. Ajouter la Farine. Mélanger afin d'avoir quelque chose d'homogène puis incorporer les noix. Verser la préparation dans un moule de préférence rectangulaire. Cuire 2O à 25 minutes à 180°. Sortez du four et attendez quelques minutes pour démouler. Servir avec une boule de glace pour plus de gourmandise.",
     appliance: 'Four',
     ustensils: ['moule à gateaux', 'casserole']
   },
@@ -309,7 +309,7 @@ export const recipes = [
       {
         ingredient: 'Fromage de chèvre',
         quantity: 150,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Vinaigre Balsamic'
@@ -322,7 +322,7 @@ export const recipes = [
       }
     ],
     time: 15,
-    description: "Peler le concombre le couper 2, retirer les pépins. Couper les olives en morceaux, ainsi que le fromage de chèvre. Ajouter le basilic ainsi que le vinaigre balsamic et l'huile d'olives à votre gout.",
+    description: "Peler le concombre le couper 2, retirer les pépins. Couper les olives en morceaux, ainsi que le fromage de chèvre. Ajouter le basilic ainsi que le vinaigre balsamic et l'Huile d'olives à votre gout.",
     appliance: 'Saladier',
     ustensils: ['cuillère en bois', 'couteau']
   },
@@ -348,7 +348,7 @@ export const recipes = [
       {
         ingredient: 'Oignon',
         quantity: 300,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Vin blanc sec',
@@ -359,21 +359,21 @@ export const recipes = [
     time: 60,
     description: "Commencer par cuire les pommes de terre dans l'eau bouillante. Puis épluchez les et coupez les en rondelles. Émincer les oignons puis les faire dorer dans du beurre. Ajouter le jambon fumé coupé en en morceaux ainsi que les pommes de terres. Salez, poivrez à votre gout ( et celui de vos convives ) Laissez cuisiner durant environ 10 minutes puis ajouter le vin blanc. Après 5 minutes, mettre le tout dans un plat à gratin. Coupez le reblochon, soit en tranches, soit le couper en 2 dans le sens de l'épaisseur et recouvrir les pommes de terre. Cuire au four (environ 220°) durant 25 minutes. C'est prêt !",
     appliance: 'Four',
-    ustensils: ['plat à gratin', 'couteau', 'Économe']
+    ustensils: ['plat à gratin', 'couteau', 'économe']
   }, {
     id: 11,
-    name: 'Salade tomate, mozzarella et pommes',
+    name: 'Salade tomates, mozzarella et pommes',
     servings: 4,
     ingredients: [
       {
         ingredient: 'Tomates cerises',
         quantity: 250,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Mozzarella',
         quantity: 150,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Jambon de parme',
@@ -406,7 +406,7 @@ export const recipes = [
       {
         ingredient: 'Rhubarbe',
         quantity: 160,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Pommes',
@@ -436,15 +436,15 @@ export const recipes = [
       {
         ingredient: 'Mâche',
         quantity: 60,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Pommes de terre',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
-        ingredient: 'Échalote',
+        ingredient: 'Echalote',
         quantity: 2
 
       },
@@ -454,13 +454,13 @@ export const recipes = [
         unit: 'cuillère à soupe'
       },
       {
-        ingredient: "huile d'olive",
+        ingredient: "Huile d'olive",
         quantity: 2,
         unit: 'cuillère à soupe'
       }
     ],
     time: 40,
-    description: "Cuire les pommes de terre environ 30 minutes. Découper les échalotes finement. Durant la cuisson des pommes de terre. Préparez la vinaigrette avec l'huile d'olive et le vinaigre de cidre. Salez poivrez à discrétion. Dans un saladier, mettre le mâche. Ajouter",
+    description: "Cuire les pommes de terre environ 30 minutes. Découper les Echalotes finement. Durant la cuisson des pommes de terre. Préparez la vinaigrette avec l'Huile d'olive et le vinaigre de cidre. Salez poivrez à discrétion. Dans un saladier, mettre le mâche. Ajouter",
     appliance: 'Casserole',
     ustensils: ['couteau', 'saladier', 'cuillère en bois']
   },
@@ -476,7 +476,7 @@ export const recipes = [
       {
         ingredient: 'Farine de blé noir',
         quantity: 130,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oeuf',
@@ -486,7 +486,7 @@ export const recipes = [
       {
         ingredient: 'Fromage à raclette',
         quantity: 300,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oignon',
@@ -495,12 +495,12 @@ export const recipes = [
       {
         ingredient: 'Beurre',
         quantity: 75,
-        unit: 'grammes'
+        unit: 'g'
       }
 
     ],
     time: 100,
-    description: "Mélanger la farine et les oeufs, faire fondre 25 grammes de beurre et ajouter à la pâte. Ajouter du sel. Laisser reposer 1 heure. Faire les galettes et laisser refroidir. Faire chauffer les saucisses avec du beurre et l'oignon. Enrouler les saucisses dans les crêpes avec une partie du fromage. Mettre le reste du fromage à raclette par dessus les crêpes. Passer four pendant 20 minutes",
+    description: "Mélanger la Farine et les oeufs, faire fondre 25 g de beurre et ajouter à la pâte. Ajouter du sel. Laisser reposer 1 heure. Faire les galettes et laisser refroidir. Faire chauffer les saucisses avec du beurre et l'oignon. Enrouler les saucisses dans les crêpes avec une partie du fromage. Mettre le reste du fromage à raclette par dessus les crêpes. Passer four pendant 20 minutes",
     appliance: 'Four',
     ustensils: ['poêle à frire', 'couteau']
   },
@@ -516,7 +516,7 @@ export const recipes = [
       {
         ingredient: 'Farine',
         quantity: 250,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Lait',
@@ -526,12 +526,12 @@ export const recipes = [
       {
         ingredient: 'Beurre salé',
         quantity: 30,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Chocolat au lait',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Banane',
@@ -539,29 +539,29 @@ export const recipes = [
       }
     ],
     time: 60,
-    description: "Mélangez dans un saladier, la farine, les oeufs, et le lait. Battez jusqu'à avoir une masse homogène. Pendant ce temps faites fondre le beurre et ajoutez en une partie à la pâte à crêpes. Faire fondre le chocolat ( avec le reste du beurre salé ). Lorsque vous chauffez les crêpes. Ajouter le chocolat fondu et les bananes coupées en rondelles. Ajoutez une touche de chantilly pour les gourmands",
+    description: "Mélangez dans un saladier, la Farine, les oeufs, et le lait. Battez jusqu'à avoir une masse homogène. Pendant ce temps faites fondre le beurre et ajoutez en une partie à la pâte à crêpes. Faire fondre le chocolat ( avec le reste du beurre salé ). Lorsque vous chauffez les crêpes. Ajouter le chocolat fondu et les Banane coupées en rondelles. Ajoutez une touche de chantilly pour les gourmands",
     appliance: 'Poêle à crêpe',
     ustensils: ['saladier', 'louche', 'cuillère en bois']
   },
   {
     id: 16,
-    name: 'Gratin de pâtes à la tomate',
+    name: 'Gratin de pâtes à la tomates',
     servings: 2,
     ingredients: [
       {
-        ingredient: 'Tomate',
+        ingredient: 'Tomates',
         quantity: 500,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Mozzarella',
         quantity: 250,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Pennes',
         quantity: 500,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Basilic',
@@ -569,7 +569,7 @@ export const recipes = [
         unit: 'tiges'
       },
       {
-        ingredient: "huile d'olives",
+        ingredient: "Huile d'olives",
         quantity: 2,
         unit: 'cuillère à soupe'
       }
@@ -587,7 +587,7 @@ export const recipes = [
       {
         ingredient: 'Fraise',
         quantity: 500,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Pastèque',
@@ -657,7 +657,7 @@ export const recipes = [
       {
         ingredient: 'Sucre glace',
         quantity: 30,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Banane',
@@ -677,31 +677,31 @@ export const recipes = [
       {
         ingredient: 'Tagliatelles',
         quantity: 500,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Lardons',
         quantity: 150,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Crème fraîche',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Parmesan',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
-        ingredient: "huile d'olive",
+        ingredient: "Huile d'olive",
         quantity: 1,
         unit: 'cuillères à soupe'
       }
     ],
     time: 30,
-    description: "Faire cuire les pates comme indiqué sur le paquet. Dorer les lardons dans une sauteuse avec l'huile d'olive. Ajouter la crème fraîche et baisser le feu au minimum. Quand les Tagliatelles sont prêtes les mettre dans la sauteuse et bien mélanger le tout en ajoutant le jaune d'oeuf. Servir et ajouter le parmesan râpé.",
+    description: "Faire cuire les pates comme indiqué sur le paquet. Dorer les lardons dans une sauteuse avec l'Huile d'olive. Ajouter la crème fraîche et baisser le feu au minimum. Quand les Tagliatelles sont prêtes les mettre dans la sauteuse et bien mélanger le tout en ajoutant le jaune d'oeuf. Servir et ajouter le parmesan râpé.",
     appliance: 'Sauteuse',
     ustensils: ['râpe à fromage', 'cuillère en bois']
   },
@@ -713,21 +713,21 @@ export const recipes = [
       {
         ingredient: 'Spaghettis',
         quantity: 400,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oignon',
         quantity: 2
       },
       {
-        ingredient: 'Coulis de tomate',
+        ingredient: 'Coulis de tomates',
         quantity: 300,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Viande hachée 1% de matière grasse',
         quantity: 400,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Vin rouge',
@@ -753,17 +753,17 @@ export const recipes = [
       {
         ingredient: 'Beurre',
         quantity: 160,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Chocolat noir',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Farine',
         quantity: 50,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oeuf',
@@ -772,11 +772,11 @@ export const recipes = [
       {
         ingredient: 'Sucre',
         quantity: 150,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 30,
-    description: "Faire fondre le chocolat et le beurre au bain marie. Dans un saladier battre les oeufs avec le sucre jusqu'à obtenir une texture de type mousse. Ajouter la farine ainsi que le mélange de beurre et chocolat fondu. Beurrez le moule à gateaux. Mettre au four préchauffé à 200° puis faites chauffer pendant 15 minutes. C'est prêt. Servir avec une boule de glace ou une crème dessert.",
+    description: "Faire fondre le chocolat et le beurre au bain marie. Dans un saladier battre les oeufs avec le sucre jusqu'à obtenir une texture de type mousse. Ajouter la Farine ainsi que le mélange de beurre et chocolat fondu. Beurrez le moule à gateaux. Mettre au four préchauffé à 200° puis faites chauffer pendant 15 minutes. C'est prêt. Servir avec une boule de glace ou une crème dessert.",
     appliance: 'Four',
     ustensils: ['moule à gateaux', 'fouet', 'casserole']
   },
@@ -788,17 +788,17 @@ export const recipes = [
       {
         ingredient: 'Pâte brisée',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Lardons',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Beurre',
         quantity: 30,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oeuf',
@@ -828,15 +828,15 @@ export const recipes = [
       {
         ingredient: 'Thon en miettes',
         quantity: 160,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Maïs',
         quantity: 60,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
-        ingredient: 'Tomate',
+        ingredient: 'Tomates',
         quantity: 1
       },
       {
@@ -846,7 +846,7 @@ export const recipes = [
       {
         ingredient: 'Macaronis',
         quantity: 300,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Mayonnaise',
@@ -867,22 +867,22 @@ export const recipes = [
       {
         ingredient: 'Sucre',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Beurre',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Farine',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Chocolat noir en pépites',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oeuf',
@@ -890,7 +890,7 @@ export const recipes = [
       }
     ],
     time: 30,
-    description: "Faire fondre le beurre et le mélanger avec le sucre. Finalement ajouter l'oeuf. Ajouter la farine tout en mélangeant peu pa peu pour avoir une masse sans grumeaux. Ajouter les pépites de chocolat. Faire, une plaque de cuisson de petites boules pour les cookies. Mettre au four à 180° pour 10 minutes.",
+    description: "Faire fondre le beurre et le mélanger avec le sucre. Finalement ajouter l'oeuf. Ajouter la Farine tout en mélangeant peu pa peu pour avoir une masse sans grumeaux. Ajouter les pépites de chocolat. Faire, une plaque de cuisson de petites boules pour les cookies. Mettre au four à 180° pour 10 minutes.",
     appliance: 'Four',
     ustensils: ['fouet', 'saladier', 'plaque de cuisson']
   },
@@ -900,7 +900,7 @@ export const recipes = [
     servings: 2,
     ingredients: [
       {
-        ingredient: 'Tomate',
+        ingredient: 'Tomates',
         quantity: 6
       },
       {
@@ -951,7 +951,7 @@ export const recipes = [
       {
         ingredient: 'Beurre salé',
         quantity: 50,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 15,
@@ -971,17 +971,17 @@ export const recipes = [
       {
         ingredient: 'Pommes de terre',
         quantity: 400,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oseille',
         quantity: 75,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Beurre',
         quantity: 50,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Crème fraîche',
@@ -990,7 +990,7 @@ export const recipes = [
       }
     ],
     time: 80,
-    description: "Émincer les blanc de poireaux et les faire chauffer dans 25 grammes de beurre. AJouter les pommes de terres coupées en morceaux. Ajouter l'eau et laisser mijoter pour 45 minutes. Chauffer l'oseille avec le beurre restant puis incorporer le tout. Mixez. Ajoutez la crème. Bon appetit.",
+    description: "Émincer les blanc de poireaux et les faire chauffer dans 25 g de beurre. AJouter les pommes de terres coupées en morceaux. Ajouter l'eau et laisser mijoter pour 45 minutes. Chauffer l'oseille avec le beurre restant puis incorporer le tout. Mixez. Ajoutez la crème. Bon appetit.",
     appliance: 'Mixer',
     ustensils: ['casserole', 'couteau']
   },
@@ -1021,7 +1021,7 @@ export const recipes = [
       }
     ],
     time: 30,
-    description: "Prendre les pois chiches, les mettre dans le mixer avec de l'huile d'olive, ajouter le jus des 2 citrons et du paprika selon le gout.",
+    description: "Prendre les pois chiches, les mettre dans le mixer avec de l'Huile d'olive, ajouter le jus des 2 citrons et du paprika selon le gout.",
     appliance: 'Mixer',
     ustensils: ['cuillère en bois', 'presse citron']
   },
@@ -1033,7 +1033,7 @@ export const recipes = [
       {
         ingredient: 'Pois Cassé',
         quantity: 500,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oignon',
@@ -1066,17 +1066,17 @@ export const recipes = [
       {
         ingredient: 'Haricots verts',
         quantity: 150,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Petits poids',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Lardons',
         quantity: 150,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 60,
@@ -1107,7 +1107,7 @@ export const recipes = [
       {
         ingredient: 'Gruyère',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Lait',
@@ -1121,7 +1121,7 @@ export const recipes = [
       }
     ],
     time: 20,
-    description: "Beurrer les tranches de pain, ajouter entre 2 tranches de pain de mie 1 tranche d’emmental, une de blanc de dinde, et une autre d'emmental. Dans un récipient, mélanger le gruyère rappé avec le lait et la noix de muscade. Mettre sur les croque monsieur. Placer au four durant 10 minutes.",
+    description: "Beurrer les tranches de pain, ajouter entre 2 tranches de pain de mie 1 tranche d’emmental, une de blanc de dinde, et une autre d'emmental. Dans un récipient, mélanger le Gruyère rappé avec le lait et la noix de muscade. Mettre sur les croque monsieur. Placer au four durant 10 minutes.",
     appliance: 'Four',
     ustensils: ['râpe à fromage', 'cuillère à Soupe', 'couteau']
   },
@@ -1168,7 +1168,7 @@ export const recipes = [
       {
         ingredient: 'Patate douce',
         quantity: 800,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Crème fraîche',
@@ -1184,7 +1184,7 @@ export const recipes = [
       }
     ],
     time: 25,
-    description: "Éplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'huile d'olive à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
+    description: "Éplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'Huile d'olive à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
     appliance: 'Mixer',
     ustensils: ['couteau', 'économe', 'cuillère en bois']
   },
@@ -1204,7 +1204,7 @@ export const recipes = [
       {
         ingredient: 'Beurre',
         quantity: 20,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Crème fraîche',
@@ -1253,7 +1253,7 @@ export const recipes = [
       {
         ingredient: 'Gruyère',
         quantity: 40,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Maïzena',
@@ -1262,7 +1262,7 @@ export const recipes = [
       }
     ],
     time: 35,
-    description: 'Raper les courgette et les faire revenir durant 15 minutes. Ajouter les fromages de chèvre frais. Préparer la béchamel avec le lait et la maïzena. Salez poivrez, ajouter de la noix de muscade selon les gouts. Dans un plat, mettre un peu de sauces au fond, puis des lasagnes, puis des courgettes etc... terminer par de la sauces et ajouter le gruyère. Passer au four à 180° durant 20 à 25 minutes.',
+    description: 'Raper les courgette et les faire revenir durant 15 minutes. Ajouter les fromages de chèvre frais. Préparer la béchamel avec le lait et la maïzena. Salez poivrez, ajouter de la noix de muscade selon les gouts. Dans un plat, mettre un peu de sauces au fond, puis des lasagnes, puis des courgettes etc... terminer par de la sauces et ajouter le Gruyère. Passer au four à 180° durant 20 à 25 minutes.',
     appliance: 'Four',
     ustensils: ['plat à gratin', 'râpe à fromage', 'fouet']
   },
@@ -1278,7 +1278,7 @@ export const recipes = [
       {
         ingredient: 'Viande hachée',
         quantity: 600,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: "Huile d'olives",
@@ -1297,12 +1297,12 @@ export const recipes = [
       {
         ingredient: 'Gruyère',
         quantity: 50,
-        unit: 'grammes'
+        unit: 'g'
       }
 
     ],
     time: 60,
-    description: "Couper les courgettes dans le sens de la longueur. Vider les courgette dans un saladier. Réserver.Faire revenir la chair des courgettes dans 25cl d'huile d'olive. Ajouter l'oignon puis la viande hachée. Mettre la farce dans les courgettes. Ajouter le coulis de tomates. Mettre au four pendant 30 minutes. Avant la fin de la cuisson ajouter le fromage râpé",
+    description: "Couper les courgettes dans le sens de la longueur. Vider les courgette dans un saladier. Réserver.Faire revenir la chair des courgettes dans 25cl d'Huile d'olive. Ajouter l'oignon puis la viande hachée. Mettre la farce dans les courgettes. Ajouter le coulis de tomates. Mettre au four pendant 30 minutes. Avant la fin de la cuisson ajouter le fromage râpé",
     appliance: 'Four',
     ustensils: ['couteau', 'cuillère en bois', 'Poêle à frire']
   },
@@ -1328,7 +1328,7 @@ export const recipes = [
       {
         ingredient: 'Sucre roux',
         quantity: 75,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 20,
@@ -1348,21 +1348,21 @@ export const recipes = [
       {
         ingredient: 'Farine',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Beurre',
         quantity: 50,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre roux',
         quantity: 80,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 40,
-    description: 'Découper les pommes en dé. Mélanger dans un saladier la farine, le sucre et le beurre. Bien mélanger. Beurrer le moule et ajouter les pommes. Par dessus placez la pate que vous avez obtenu. Cuire 20 minutes au four',
+    description: 'Découper les pommes en dé. Mélanger dans un saladier la Farine, le sucre et le beurre. Bien mélanger. Beurrer le moule et ajouter les pommes. Par dessus placez la pate que vous avez obtenu. Cuire 20 minutes au four',
     appliance: 'Four',
     ustensils: ['saladier', 'couteau', 'fouet']
   },
@@ -1408,7 +1408,7 @@ export const recipes = [
       {
         ingredient: 'Chocolat noir',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre vanillé',
@@ -1429,7 +1429,7 @@ export const recipes = [
       {
         ingredient: 'Chocolat',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oeuf',
@@ -1458,17 +1458,17 @@ export const recipes = [
       {
         ingredient: 'Pâte brisée',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre',
         quantity: 150,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Beurre fondu',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oeuf',
@@ -1496,26 +1496,26 @@ export const recipes = [
       {
         ingredient: 'Chocolat',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Beurre',
         quantity: 50,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
-        ingredient: 'farine',
+        ingredient: 'Farine',
         quantity: 40,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 15,
-    description: 'Mélanger la farine et le beurre fondu en ajoutant le lait peu à peu. Ajouter du sucre après la cuisson. Bien mélanger. Ajouter le chocolat en morceaux et laisser chauffer 8 minutes en mélangeant avec une cuillère en bois. Mettre dans des verres',
+    description: 'Mélanger la Farine et le beurre fondu en ajoutant le lait peu à peu. Ajouter du sucre après la cuisson. Bien mélanger. Ajouter le chocolat en morceaux et laisser chauffer 8 minutes en mélangeant avec une cuillère en bois. Mettre dans des verres',
     appliance: 'Casserole',
     ustensils: ['cuillère en bois']
   },
@@ -1536,16 +1536,16 @@ export const recipes = [
       {
         ingredient: 'Farine',
         quantity: 30,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre',
         quantity: 80,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 30,
-    description: "Faire bouillir le lait ( on peut y ajouter de l'essence de vanille. Battre les oeufs et le sucre, ajouter la farine puis finalement ajouter le lait chaud. Remettre à feu doux pour faire épaissir en remuant pendant 5 à 10 minutes.",
+    description: "Faire bouillir le lait ( on peut y ajouter de l'essence de vanille. Battre les oeufs et le sucre, ajouter la Farine puis finalement ajouter le lait chaud. Remettre à feu doux pour faire épaissir en remuant pendant 5 à 10 minutes.",
     appliance: 'Casserole',
     ustensils: ['fouet', 'saladier']
   },
@@ -1557,12 +1557,12 @@ export const recipes = [
       {
         ingredient: 'Farine',
         quantity: 250,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre',
         quantity: 150,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre vanillé',
@@ -1581,11 +1581,11 @@ export const recipes = [
       {
         ingredient: 'Pruneaux',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 60,
-    description: 'Mélanger la farine avec le sucre et les oeufs en ajoutant du sucre vanillé. Ajouter le lait petit à petit. Ajouter un petit vers de rhum. Verser la masse dans un plat beurré y placer les pruneaux et faire cuire à 200° pendant 45 minutes',
+    description: 'Mélanger la Farine avec le sucre et les oeufs en ajoutant du sucre vanillé. Ajouter le lait petit à petit. Ajouter un petit vers de rhum. Verser la masse dans un plat beurré y placer les pruneaux et faire cuire à 200° pendant 45 minutes',
     appliance: 'Four',
     ustensils: ['fouet', 'moule', 'verres']
   },
@@ -1597,17 +1597,17 @@ export const recipes = [
       {
         ingredient: 'Jus de citron',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Mascarpone',
         quantity: 250,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre',
         quantity: 100,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Crème Fraîche',
@@ -1647,11 +1647,11 @@ export const recipes = [
       {
         ingredient: 'Gruyère',
         quantity: 200,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 40,
-    description: 'Étaler la pate a pizza. Écraser les tomates pelées, les étaler sur la pâte, ajouter les lardons et les champignons. Ajouter le gruyère eet passer au four à 220° durant 20 minutes',
+    description: 'Étaler la pate a pizza. Écraser les Tomates pelées, les étaler sur la pâte, ajouter les lardons et les champignons. Ajouter le Gruyère eet passer au four à 220° durant 20 minutes',
     appliance: 'Four',
     ustensils: ['rouleau à patisserie', 'râpe à fromage', 'couteau']
   },
@@ -1661,7 +1661,7 @@ export const recipes = [
     servings: 4,
     ingredients: [
       {
-        ingredient: 'Bananes',
+        ingredient: 'Banane',
         quantity: 2
       },
       {
@@ -1696,7 +1696,7 @@ export const recipes = [
       {
         ingredient: 'Pâte feuilletée',
         quantity: 400,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Oeuf',
@@ -1705,17 +1705,17 @@ export const recipes = [
       {
         ingredient: "Poudre d'amendes",
         quantity: 500,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Beurre',
         quantity: 500,
-        unit: 'grammes'
+        unit: 'g'
       },
       {
         ingredient: 'Sucre glace',
         quantity: 500,
-        unit: 'grammes'
+        unit: 'g'
       }
     ],
     time: 60,
