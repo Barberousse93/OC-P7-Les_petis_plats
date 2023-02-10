@@ -103,7 +103,7 @@ header h1 {
 .dropdownIcone {
     position: absolute;
     right: 0px;
-    content: url(/assets/icones/dropdowon.png);
+    content: url(../assets/icones/dropdowon.png);
     padding: 20px;
     top: 10px;
 }
@@ -111,7 +111,7 @@ header h1 {
 .dropupIcone {
     position: absolute;
     right: 0px;
-    content: url(/assets/icones/dropup.png);
+    content: url(../assets/icones/dropup.png);
     padding: 20px;
     top: 10px;
 }
