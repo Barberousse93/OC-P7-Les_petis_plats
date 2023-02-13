@@ -101,27 +101,32 @@ function recipesCards(recettes) {
 
 function fiterRecipe(FindValue) {
   filteredRecipes = recipes.filter((recette) => {
-    if (recette.description.toUpperCase().includes(FindValue.toUpperCase()) || recette.appliance.toUpperCase().includes(FindValue.toUpperCase()) || recette.name.toUpperCase().includes(FindValue.toUpperCase())
-      // || recette.ingredients.ingredient.toUpperCase().includes(FindValue.toUpperCase()) || recette.ustensils.toUpperCase().includes(FindValue.toUpperCase())
-    ) return true
+    if (recette.name.toUpperCase().includes(FindValue.toUpperCase()) ||
+    recette.description.toUpperCase().includes(FindValue.toUpperCase()) ||
+    recette.appliance.toUpperCase().includes(FindValue.toUpperCase())) { return true }
   })
+  console.log('1', filteredRecipes)
+  if (filteredRecipes.length === 0) {
+    fiterRecipe2(FindValue)
+  }
+}
 
+function fiterRecipe2(FindValue) {
   for (let i = 0; i < recipes.length; i++) {
     for (let j = 0; j < recipes[i].ingredients.length; j++) {
       if (recipes[i].ingredients[j].ingredient.toUpperCase().includes(FindValue.toUpperCase())) {
         filteredRecipes.push(recipes[i])
       }
     }
+    console.log('2', filteredRecipes)
+
     for (let k = 0; k < recipes[i].ustensils.length; k++) {
-      if (recipes[i].ustensils[k].toUpperCase().includes(FindValue.toUpperCase())) { filteredRecipes.push(recipes[i]) }
+      if (recipes[i].ustensils[k].toUpperCase().includes(FindValue.toUpperCase())) {
+        filteredRecipes.push(recipes[i])
+      }
     }
   }
-  sortRecipes(filteredRecipes)
-  recipesCards(filteredRecipes)
-  ListeIngredients(filteredRecipes)
-  ListeApareils(filteredRecipes)
-  ListeUstensiles(filteredRecipes)
-  addEventsButtonsFilter()
+  console.log('3', filteredRecipes)
 }
 
 // Evenement 'change' sur inputBox
@@ -132,6 +137,13 @@ searchZoneText.addEventListener('input', () => {
   }
   if (searchZoneText.value.length > 2) {
     fiterRecipe(searchZoneText.value)
+    sortRecipes(filteredRecipes)
+    makeFilterListe(filteredRecipes)
+    recipesCards(filteredRecipes)
+    ListeIngredients(filteredRecipes)
+    ListeApareils(filteredRecipes)
+    ListeUstensiles(filteredRecipes)
+    addEventsButtonsFilter()
   }
 })
 
