@@ -248,7 +248,7 @@ main {
 }
 
 .recipetime:before {
-    content: url(/assets/icones/clock.png);
+    content: url(../assets/icones/clock.png);
     padding-right: 5px;
 }
 

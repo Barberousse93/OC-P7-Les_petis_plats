@@ -1,4 +1,5 @@
-export function makeRecipeCard (recette) {
+/* eslint-disable space-before-function-paren */
+export function makeRecipeCard(recette) {
   const main = document.querySelector('main')
   const card = document.createElement('article')
   card.classList.add('card')
@@ -52,5 +53,4 @@ export function makeRecipeCard (recette) {
   recipeDescription.innerText = recette.description
   recipeDetail.appendChild(recipeDescription)
   main.appendChild(card)
-  // })
 }

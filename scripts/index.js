@@ -6,11 +6,12 @@ import { makeTagButton } from './constructors/tagButtons.js'
 import { makeRecipeCard } from './constructors/cards.js'
 
 sortRecipes(recipes)
-// const filteredRecipes = []
+let filteredRecipes = []
 
 // Gestion des événements des listes déroulantes de filtres
 
 function GestionBoutonFiltre(bouton, liste) {
+  // return new Promise(resolve => {
   bouton.addEventListener('click', () => {
     const span = bouton.querySelector('span')
     if (liste.classList.contains('hidden')) {
@@ -23,16 +24,22 @@ function GestionBoutonFiltre(bouton, liste) {
       span.classList.remove('dropupIcone')
     }
   })
+  // })
 }
 
-async function GestionClickItemListe(liste) {
+function GestionClickItemListe(liste) {
+  // return new Promise(resolve => {
   for (let i = 0; i < liste.length; i++) {
-    liste[i].addEventListener('click', (e) => {
-      e.stopPropagation()
-      liste[i].classList.add('hidden')
+    liste[i].addEventListener('click', () => {
+      console.log('liste[i].innerText')
+      console.log(liste[i].innerText)
+      fiterRecipe(liste[i].innerText)
       makeTagButton(liste[i])
+      // e.stopPropagation()
+      // liste[i].classList.add('hidden')
     })
   }
+  // })
 }
 
 function addEventsButtonsFilter() {
@@ -43,19 +50,19 @@ function addEventsButtonsFilter() {
   GestionBoutonFiltre(ingredients, listeIngredients)
   GestionClickItemListe(listItemsIngredients)
 
-  const ustensiles = document.querySelector('#ustensiles')
-  const listeUstensiles = document.querySelector('.listeUstensiles')
-  const listItemsUstensiles = document.querySelectorAll('.listeUstensiles li')
-
-  GestionBoutonFiltre(ustensiles, listeUstensiles)
-  GestionClickItemListe(listItemsUstensiles)
-
   const apareils = document.querySelector('#apareils')
   const listeApareils = document.querySelector('.listeApareils')
   const listItemsApareils = document.querySelectorAll('.listeApareils li')
 
   GestionBoutonFiltre(apareils, listeApareils)
   GestionClickItemListe(listItemsApareils)
+
+  const ustensiles = document.querySelector('#ustensiles')
+  const listeUstensiles = document.querySelector('.listeUstensiles')
+  const listItemsUstensiles = document.querySelectorAll('.listeUstensiles li')
+
+  GestionBoutonFiltre(ustensiles, listeUstensiles)
+  GestionClickItemListe(listItemsUstensiles)
 }
 
 async function ListeIngredients(recettes) {
@@ -83,11 +90,38 @@ async function ListeUstensiles(recettes) {
 }
 
 function recipesCards(recettes) {
-  const main = document.querySelector('main')
-  main.innerHTML = ''
-  for (let i = 0; i < recettes.length; i++) {
-    makeRecipeCard(recettes[i])
+  return new Promise(resolve => {
+    const main = document.querySelector('main')
+    main.innerHTML = ''
+    for (let i = 0; i < recettes.length; i++) {
+      makeRecipeCard(recettes[i])
+    }
+  })
+}
+
+function fiterRecipe(FindValue) {
+  filteredRecipes = recipes.filter((recette) => {
+    if (recette.description.toUpperCase().includes(FindValue.toUpperCase()) || recette.appliance.toUpperCase().includes(FindValue.toUpperCase()) || recette.name.toUpperCase().includes(FindValue.toUpperCase())
+      // || recette.ingredients.ingredient.toUpperCase().includes(FindValue.toUpperCase()) || recette.ustensils.toUpperCase().includes(FindValue.toUpperCase())
+    ) return true
+  })
+
+  for (let i = 0; i < recipes.length; i++) {
+    for (let j = 0; j < recipes[i].ingredients.length; j++) {
+      if (recipes[i].ingredients[j].ingredient.toUpperCase().includes(FindValue.toUpperCase())) {
+        filteredRecipes.push(recipes[i])
+      }
+    }
+    for (let k = 0; k < recipes[i].ustensils.length; k++) {
+      if (recipes[i].ustensils[k].toUpperCase().includes(FindValue.toUpperCase())) { filteredRecipes.push(recipes[i]) }
+    }
   }
+  sortRecipes(filteredRecipes)
+  recipesCards(filteredRecipes)
+  ListeIngredients(filteredRecipes)
+  ListeApareils(filteredRecipes)
+  ListeUstensiles(filteredRecipes)
+  addEventsButtonsFilter()
 }
 
 // Evenement 'change' sur inputBox
@@ -97,26 +131,16 @@ searchZoneText.addEventListener('input', () => {
     init()
   }
   if (searchZoneText.value.length > 2) {
-    const filteredRecipes = recipes.filter((valeur) => {
-      if (valeur.description.includes(searchZoneText.value) || valeur.appliance.includes(searchZoneText.value)
-      ) return true
-    })
-
-    sortRecipes(filteredRecipes)
-    recipesCards(filteredRecipes)
-    ListeIngredients(filteredRecipes)
-    ListeApareils(filteredRecipes)
-    ListeUstensiles(filteredRecipes)
-    addEventsButtonsFilter()
+    fiterRecipe(searchZoneText.value)
   }
 })
 
 async function init() {
+  recipesCards(recipes)
   ListeIngredients(recipes)
   ListeApareils(recipes)
   ListeUstensiles(recipes)
   addEventsButtonsFilter()
-  recipesCards(recipes)
 }
 
 init()

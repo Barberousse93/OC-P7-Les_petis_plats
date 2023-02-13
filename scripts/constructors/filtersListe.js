@@ -3,7 +3,6 @@
 
 export function makeDOM(tableau, color, tagUL) {
     return new Promise(resolve => {
-        // const tagUL = document.querySelector('.listeIngredients')
         for (let i = 0; i < tableau.length; i++) {
             const tagLI = document.createElement('li')
             tagLI.classList.add('itemListe', color)
