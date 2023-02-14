@@ -72,7 +72,10 @@ header h1 {
 #searchZoneTexte:focus~label,
 #searchZoneTexte:valid~label {
     color: #000;
-    transform: translateY(-50px);
+    background-color: #e7e7e7;
+    transform: translateY(-35px) translateX(-20px) scale(0.8);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #listBoxZone {
