@@ -67,6 +67,8 @@ header h1 {
     /* border:none; */
     background-color: #e7e7e7;
     padding-left: 10px;
+    font-family: 'lato', 'sans-serif';
+    font-weight: 700;
 }
 
 #searchZoneTexte:focus~label,
@@ -248,11 +250,13 @@ main {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    display: inline-flex;
 }
 
 .recipetime:before {
     content: url(../assets/icones/clock.png);
     padding-right: 5px;
+
 }
 
 .recipedetail {
@@ -289,4 +293,15 @@ main {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+}
+
+.message {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'lato', 'sans-serif';
+    font-weight: 700;
+    font-size: 20px;
 }
