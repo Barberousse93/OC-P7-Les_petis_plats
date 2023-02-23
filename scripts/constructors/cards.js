@@ -54,3 +54,22 @@ export function makeRecipeCard(recette) {
   recipeDetail.appendChild(recipeDescription)
   main.appendChild(card)
 }
+
+// Créer les cartes des recettes
+export function recipesCards (ListeRecettes) {
+  // Affichage du message si aucune recette ne correspond aux critères
+  const message = document.querySelector('.message')
+  if (ListeRecettes.length === 0) {
+    message.classList.remove('hidden')
+  } else {
+    message.classList.add('hidden')
+  }
+
+  return new Promise(resolve => {
+    const main = document.querySelector('main')
+    main.innerHTML = ''
+    for (let i = 0; i < ListeRecettes.length; i++) {
+      makeRecipeCard(ListeRecettes[i])
+    }
+  })
+}

@@ -1,8 +1,6 @@
-/* eslint-disable space-before-function-paren */
-/* eslint-disable no-undef */
-
 import { recipes } from '../data/recipes.js'
 import { makeRecipeCard } from './constructors/cards.js'
+import { sortRecipes } from './utils/arrays.js'
 
 // to do liste :
 // fonction fitre sur input avec parmetre tableau à filter + valeur de recherche : copie du tableau + filtrage du tableau + revoi le tableau filtré
@@ -128,7 +126,7 @@ searchZoneText.addEventListener('input', () => {
 
 // Fitrer les ingrédients dans la liste en cours des recettes
 // (filtre sur les tags)
-function ListeIngredients(ListeRecettes) {
+function ListeIngredients (ListeRecettes) {
   filteredIngredients = []
   ListeRecettes.forEach((recette) => {
     recette.ingredients.forEach((item) => {
@@ -146,7 +144,8 @@ function ListeIngredients(ListeRecettes) {
     const tagLI = document.createElement('li')
     tagLI.classList.add('itemListe', 'color1')
     tagLI.innerText = filteredIngredients[i]
-    tagLI.addEventListener('click', () => {
+    tagLI.addEventListener('click', (e) => {
+      e.stopPropagation()
       if (!filterTags.ing.includes(tagLI.innerText)) {
         filterTags.ing.push(tagLI.innerText)
         filterRecipeByIngredient(tagLI.innerText, ListeRecettes)
@@ -159,7 +158,7 @@ function ListeIngredients(ListeRecettes) {
 
 // Fitrer les apareils (appliance) dans la liste en cours des recettes
 // (filtre sur tags)
-function ListeApareils(ListeRecettes) {
+function ListeApareils (ListeRecettes) {
   filteredAppliance = []
   ListeRecettes.forEach((recette) => {
     if (!filteredAppliance.includes(recette.appliance)) {
@@ -175,7 +174,8 @@ function ListeApareils(ListeRecettes) {
     const tagLI = document.createElement('li')
     tagLI.classList.add('itemListe', 'color2')
     tagLI.innerText = filteredAppliance[i]
-    tagLI.addEventListener('click', () => {
+    tagLI.addEventListener('click', (e) => {
+      e.stopPropagation()
       if (!filterTags.app.includes(tagLI.innerText)) {
         filterTags.app.push(tagLI.innerText)
         filterRecipeByAppliance(tagLI.innerText, ListeRecettes)
@@ -188,7 +188,7 @@ function ListeApareils(ListeRecettes) {
 
 // Fitrer les ustensiles dans la liste en cours des recettes
 // (Filtre sur tags)
-function ListeUstensiles(ListeRecettes) {
+function ListeUstensiles (ListeRecettes) {
   filteredUstenils = []
   ListeRecettes.forEach((recette) => {
     recette.ustensils.forEach((item) => {
@@ -206,7 +206,8 @@ function ListeUstensiles(ListeRecettes) {
     const tagLI = document.createElement('li')
     tagLI.classList.add('itemListe', 'color3')
     tagLI.innerText = filteredUstenils[i]
-    tagLI.addEventListener('click', () => {
+    tagLI.addEventListener('click', (e) => {
+      e.stopPropagation()
       if (!filterTags.ust.includes(tagLI.innerText)) {
         filterTags.ust.push(tagLI.innerText)
         filterRecipeByUstensil(tagLI.innerText, ListeRecettes)
@@ -219,7 +220,15 @@ function ListeUstensiles(ListeRecettes) {
 }
 
 // Créer les cartes des recettes
-function recipesCards(ListeRecettes) {
+function recipesCards (ListeRecettes) {
+  // Affichage du message si aucune recette ne correspond aux critères
+  const message = document.querySelector('.message')
+  if (ListeRecettes.length === 0) {
+    message.classList.remove('hidden')
+  } else {
+    message.classList.add('hidden')
+  }
+
   return new Promise(resolve => {
     const main = document.querySelector('main')
     main.innerHTML = ''
@@ -230,7 +239,7 @@ function recipesCards(ListeRecettes) {
 }
 
 // Filtre "global" sur le nom de la recette, les ingrédients et la description de la recette
-function filterRecipe(findValue, listeRecettes) {
+function filterRecipe (findValue, listeRecettes) {
   filteredRecipes = listeRecettes.filter((recette) => recette.name.toUpperCase().includes(findValue.toUpperCase()) ||
   recette.ingredients.find((ing) => ing.ingredient.toUpperCase().includes(findValue.toUpperCase())) ||
   recette.description.toUpperCase().includes(findValue.toUpperCase()))
@@ -242,7 +251,7 @@ function filterRecipe(findValue, listeRecettes) {
 }
 
 // Filtre uniquement sur les ingrédients
-function filterRecipeByIngredient(findValue, listeRecettes) {
+function filterRecipeByIngredient (findValue, listeRecettes) {
   filteredRecipes = listeRecettes.filter((recette) => recette.ingredients.find((ing) => ing.ingredient.toUpperCase().includes(findValue.toUpperCase())))
 
   recipesCards(filteredRecipes)
@@ -252,7 +261,7 @@ function filterRecipeByIngredient(findValue, listeRecettes) {
 }
 
 // Filtre uniquement sur les apareils
-function filterRecipeByAppliance(findValue, listeRecettes) {
+function filterRecipeByAppliance (findValue, listeRecettes) {
   filteredRecipes = listeRecettes.filter((recette) => recette.appliance.toUpperCase().includes(findValue.toUpperCase()))
   recipesCards(filteredRecipes)
   ListeIngredients(filteredRecipes)
@@ -261,7 +270,7 @@ function filterRecipeByAppliance(findValue, listeRecettes) {
 }
 
 // Filtre uniquement sur les ustensiles
-function filterRecipeByUstensil(findValue, listeRecettes) {
+function filterRecipeByUstensil (findValue, listeRecettes) {
   filteredRecipes = listeRecettes.filter((recette) => recette.ustensils.find((ust) => ust.toUpperCase().includes(findValue.toUpperCase())))
   recipesCards(filteredRecipes)
   ListeIngredients(filteredRecipes)
@@ -270,7 +279,7 @@ function filterRecipeByUstensil(findValue, listeRecettes) {
 }
 
 // Gestion des tags (boutons filtre) sur selection dans les listes ingrédients / apareils / ustensiles
-function makeTagButton(bouton) {
+function makeTagButton (bouton) {
   return new Promise(resolve => {
     const tagZone = document.querySelector('#tagZone')
     const tagButton = document.createElement('div')
@@ -313,7 +322,7 @@ function makeTagButton(bouton) {
 }
 
 // Mise à jour du tableau des recettes.
-function updateRecipes(tagArray) {
+function updateRecipes (tagArray) {
   const inputSearch = document.querySelector('#searchZoneTexte')
   // Si tous le champs de recherche est vide et aucun tag : Reinitialisation du tableau
   if (!tagArray.ing.length & !tagArray.app.length & !tagArray.ust.length & !inputSearch.value.length) {
@@ -340,11 +349,12 @@ function updateRecipes(tagArray) {
   }
 }
 
-function init() {
+function init () {
   recipesCards(recipes)
   ListeIngredients(recipes)
   ListeApareils(recipes)
   ListeUstensiles(recipes)
 }
 
+// Point d'entrée
 init()
