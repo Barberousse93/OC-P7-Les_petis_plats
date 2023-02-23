@@ -26,13 +26,13 @@ const filterTags = {
 //* *********************************************************** *//
 // Ajout des Event 'click' sur les entêtes de liste de filtres
 const ingredientsButton = document.querySelector('#ingredients')
-const ingredientsList = document.querySelector('.listeIngredients')
+const ingredientsList = document.querySelector('#blocListeIngredients')
 const spanIng = ingredientsButton.querySelector('span')
 const applianceButton = document.querySelector('#apareils')
-const appliancesList = document.querySelector('.listeApareils')
+const appliancesList = document.querySelector('#blocLlisteApareils')
 const spanApp = applianceButton.querySelector('span')
 const ustensilsButton = document.querySelector('#ustensiles')
-const ustensilsList = document.querySelector('.listeUstensiles')
+const ustensilsList = document.querySelector('#blocListeUstensiles')
 const spanUst = ustensilsButton.querySelector('span')
 
 // Afficher/masquer la liste des ingredients
@@ -138,10 +138,11 @@ function ListeIngredients (ListeRecettes) {
   filteredIngredients = filteredIngredients.sort((a, b) => a.localeCompare(b, 'fr'))
 
   // Creer la liste des ingredients
-  const ingredientsList = document.querySelector('.listeIngredients')
+  const ingredientsList = document.querySelector('#listeIngredients')
   ingredientsList.innerHTML = ''
+
   for (let i = 0; i < filteredIngredients.length; i++) {
-    const tagLI = document.createElement('li')
+    const tagLI = document.createElement('div')
     tagLI.classList.add('itemListe', 'color1')
     tagLI.innerText = filteredIngredients[i]
     tagLI.addEventListener('click', (e) => {
@@ -168,10 +169,10 @@ function ListeApareils (ListeRecettes) {
   filteredAppliance = filteredAppliance.sort((a, b) => a.localeCompare(b, 'fr'))
 
   // Creer la liste des apareils
-  const appliancesList = document.querySelector('.listeApareils')
+  const appliancesList = document.querySelector('#listeApareils')
   appliancesList.innerHTML = ''
   for (let i = 0; i < filteredAppliance.length; i++) {
-    const tagLI = document.createElement('li')
+    const tagLI = document.createElement('div')
     tagLI.classList.add('itemListe', 'color2')
     tagLI.innerText = filteredAppliance[i]
     tagLI.addEventListener('click', (e) => {
@@ -200,10 +201,10 @@ function ListeUstensiles (ListeRecettes) {
   filteredUstenils = filteredUstenils.sort((a, b) => a.localeCompare(b, 'fr'))
 
   // Creer la liste des usensiles
-  const ustensilsList = document.querySelector('.listeUstensiles')
+  const ustensilsList = document.querySelector('#listeUstensiles')
   ustensilsList.innerHTML = ''
   for (let i = 0; i < filteredUstenils.length; i++) {
-    const tagLI = document.createElement('li')
+    const tagLI = document.createElement('div')
     tagLI.classList.add('itemListe', 'color3')
     tagLI.innerText = filteredUstenils[i]
     tagLI.addEventListener('click', (e) => {
