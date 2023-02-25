@@ -9,6 +9,9 @@
     --color1: #3282F7;
     --color2: #68D9A4;
     --color3: #ED6454;
+    --color1_hover: #245fb3;
+    --color2_hover: #438c6b;
+    --color3_hover: #a14338;
     --cardBackground: #C7BEBE;
     --recipeBackground: #e7e7e7;
 }
@@ -69,6 +72,7 @@ header h1 {
     padding-left: 10px;
     font-family: 'lato', 'sans-serif';
     font-weight: 700;
+    pointer-events: none;
 }
 
 #searchZoneTexte:focus~label,
@@ -139,8 +143,51 @@ header h1 {
     transform: scale(0);
 }
 
-#ZoneinputIng {
+.filterZoneInput {
     position: relative;
+    width: 600px;
+    left: -10px;
+    border-top-right-radius: 5px;
+}
+
+.inputFilter {
+    margin-left: 30px;
+    line-height: 30px;
+    width: 300px;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    pointer-events: none;
+    font-family: 'lato', 'sans-serif';
+    font-weight: 700;
+}
+
+.inputFilter:focus~.inputLabel,
+.inputFilter:valid~.inputLabel {
+    transform: translateY(-25px) translateX(-45px) scale(0.8);
+}
+
+#ZoneinputIng .inputLabel,
+#ZoneinputApp .inputLabel,
+#ZoneinputUst .inputLabel {
+    color: #fff;
+    cursor: pointer;
+}
+
+#inputIng:hover,
+#inputIng:focus {
+    background-color: var(--color1_hover);
+}
+
+#inputApp:hover,
+#inputApp:focus {
+    background-color: var(--color2_hover);
+}
+
+#inputUst:hover,
+#inputUst:focus {
+    background-color: var(--color3_hover);
 }
 
 .blocItemsListe {
@@ -151,6 +198,7 @@ header h1 {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: left;
     border-radius: 50px;
+    left: 0;
 }
 
 .itemListe {
@@ -165,13 +213,28 @@ header h1 {
     cursor: pointer;
 }
 
-.listbox:hover {
+#ingredients:hover,
+#ingredients .itemListe:hover {
+    background-color: var(--color1_hover);
+}
+
+#apareils:hover,
+#apareils .itemListe:hover {
+    background-color: var(--color2_hover);
+}
+
+#ustensiles:hover,
+#ustensiles .itemListe:hover {
+    background-color: var(--color3_hover);
+}
+
+/* .listbox:hover {
     opacity: 0.8;
 }
 
 .itemListe:hover {
     opacity: 0.8;
-}
+} */
 
 #tagZone {
     position: relative;
@@ -247,8 +310,6 @@ main {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-
-
 }
 
 .recipetime {
@@ -262,7 +323,6 @@ main {
 .recipetime:before {
     content: url(../assets/icones/clock.png);
     padding-right: 5px;
-
 }
 
 .recipedetail {
