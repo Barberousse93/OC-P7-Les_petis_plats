@@ -337,9 +337,26 @@ function recipesCards(ListeRecettes) {
 
 // Filtre "global" sur le nom de la recette, les ingrédients et la description de la recette
 function filterRecipe(findValue, listeRecettes) {
-  filteredRecipes = listeRecettes.filter((recette) => recette.name.toUpperCase().includes(findValue.toUpperCase()) ||
-    recette.ingredients.find((ing) => ing.ingredient.toUpperCase().includes(findValue.toUpperCase())) ||
-    recette.description.toUpperCase().includes(findValue.toUpperCase()))
+  filteredRecipes = []
+  for (let i = 0; i < listeRecettes.length; i++) {
+    let trouve = false
+    // recherche dans la description
+    if (listeRecettes[i].description.toUpperCase().match(findValue.toUpperCase())) { trouve = true }
+    // Recherche dans le titre (name)
+    if (listeRecettes[i].name.toUpperCase().match(findValue.toUpperCase())) { trouve = true }
+    // Recherche dans les ingrédients
+    for (let j = 0; j < listeRecettes[i].ingredients.length; j++) {
+      console.log('listeRecettes[i].ingredients.ingredient[j]')
+      console.log(listeRecettes[i].ingredients[j].ingredient)
+      if (listeRecettes[i].ingredients[j].ingredient.toUpperCase().match(findValue.toUpperCase())) { trouve = true }
+    }
+    if (trouve === true) { filteredRecipes.push(listeRecettes[i]) }
+    console.log(filteredRecipes)
+  }
+
+  // filteredRecipes = listeRecettes.filter((recette) => recette.name.toUpperCase().includes(findValue.toUpperCase()) ||
+  //   recette.ingredients.find((ing) => ing.ingredient.toUpperCase().includes(findValue.toUpperCase())) ||
+  //   recette.description.toUpperCase().includes(findValue.toUpperCase()))
 
   recipesCards(filteredRecipes)
   ListeIngredients(filteredRecipes)

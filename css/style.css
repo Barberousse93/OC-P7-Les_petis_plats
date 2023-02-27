@@ -149,6 +149,7 @@ header h1 {
     width: 600px;
     left: -10px;
     border-top-right-radius: 5px;
+    padding-top: 10px;
 }
 
 .inputFilter {
