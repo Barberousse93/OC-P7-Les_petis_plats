@@ -96,13 +96,13 @@ export const recipes = [
         quantity: 1
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d'olives",
         quantity: 1,
         unit: 'cuillères à soupe'
       }
     ],
     time: 80,
-    description: "Découper le poulet en morceaux, les faire dorer dans une cocotte avec de l'Huile d'olive. Salez et poivrez. Une fois doré, laisser cuire en ajoutant de l'eau. Au bout de 30 minutes, ajouter le coulis de tomates, le lait de coco ainsi que le poivron et l'oignon découpés en morceaux. Laisser cuisiner 30 minutes de plus. Servir avec du riz",
+    description: "Découper le poulet en morceaux, les faire dorer dans une cocotte avec de l'Huile d'olives. Salez et poivrez. Une fois doré, laisser cuire en ajoutant de l'eau. Au bout de 30 minutes, ajouter le coulis de tomates, le lait de coco ainsi que le poivron et l'oignon découpés en morceaux. Laisser cuisiner 30 minutes de plus. Servir avec du riz",
     appliance: 'Cocotte',
     ustensils: ['couteau']
   }, {
@@ -315,7 +315,7 @@ export const recipes = [
         ingredient: 'Vinaigre Balsamic'
       },
       {
-        ingredient: "Huile d'olive"
+        ingredient: "Huile d'olives"
       },
       {
         ingredient: 'Basilic'
@@ -454,13 +454,13 @@ export const recipes = [
         unit: 'cuillère à soupe'
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d'olives",
         quantity: 2,
         unit: 'cuillère à soupe'
       }
     ],
     time: 40,
-    description: "Cuire les pommes de terre environ 30 minutes. Découper les Echalotes finement. Durant la cuisson des pommes de terre. Préparez la vinaigrette avec l'Huile d'olive et le vinaigre de cidre. Salez poivrez à discrétion. Dans un saladier, mettre le mâche. Ajouter",
+    description: "Cuire les pommes de terre environ 30 minutes. Découper les Echalotes finement. Durant la cuisson des pommes de terre. Préparez la vinaigrette avec l'Huile d'olives et le vinaigre de cidre. Salez poivrez à discrétion. Dans un saladier, mettre le mâche. Ajouter",
     appliance: 'Casserole',
     ustensils: ['couteau', 'saladier', 'cuillère en bois']
   },
@@ -695,13 +695,13 @@ export const recipes = [
         unit: 'g'
       },
       {
-        ingredient: "Huile d'olive",
+        ingredient: "Huile d'olives",
         quantity: 1,
         unit: 'cuillères à soupe'
       }
     ],
     time: 30,
-    description: "Faire cuire les pates comme indiqué sur le paquet. Dorer les lardons dans une sauteuse avec l'Huile d'olive. Ajouter la crème fraîche et baisser le feu au minimum. Quand les Tagliatelles sont prêtes les mettre dans la sauteuse et bien mélanger le tout en ajoutant le jaune d'oeuf. Servir et ajouter le parmesan râpé.",
+    description: "Faire cuire les pates comme indiqué sur le paquet. Dorer les lardons dans une sauteuse avec l'Huile d'olives. Ajouter la crème fraîche et baisser le feu au minimum. Quand les Tagliatelles sont prêtes les mettre dans la sauteuse et bien mélanger le tout en ajoutant le jaune d'oeuf. Servir et ajouter le parmesan râpé.",
     appliance: 'Sauteuse',
     ustensils: ['râpe à fromage', 'cuillère en bois']
   },
@@ -1014,14 +1014,14 @@ export const recipes = [
         quantity: 2
       },
       {
-        ingredient: "Huile d'olive"
+        ingredient: "Huile d'olives"
       },
       {
         ingredient: 'Paprika'
       }
     ],
     time: 30,
-    description: "Prendre les pois chiches, les mettre dans le mixer avec de l'Huile d'olive, ajouter le jus des 2 citrons et du paprika selon le gout.",
+    description: "Prendre les pois chiches, les mettre dans le mixer avec de l'Huile d'olives, ajouter le jus des 2 citrons et du paprika selon le gout.",
     appliance: 'Mixer',
     ustensils: ['cuillère en bois', 'presse citron']
   },
@@ -1176,7 +1176,7 @@ export const recipes = [
         unit: 'cl'
       },
       {
-        ingredient: "Huile d'olive"
+        ingredient: "Huile d'olives"
       },
       {
         ingredient: 'Orange',
@@ -1184,7 +1184,7 @@ export const recipes = [
       }
     ],
     time: 25,
-    description: "Éplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'Huile d'olive à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
+    description: "Éplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'Huile d'olives à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
     appliance: 'Mixer',
     ustensils: ['couteau', 'économe', 'cuillère en bois']
   },
@@ -1302,7 +1302,7 @@ export const recipes = [
 
     ],
     time: 60,
-    description: "Couper les courgettes dans le sens de la longueur. Vider les courgette dans un saladier. Réserver.Faire revenir la chair des courgettes dans 25cl d'Huile d'olive. Ajouter l'oignon puis la viande hachée. Mettre la farce dans les courgettes. Ajouter le coulis de tomates. Mettre au four pendant 30 minutes. Avant la fin de la cuisson ajouter le fromage râpé",
+    description: "Couper les courgettes dans le sens de la longueur. Vider les courgette dans un saladier. Réserver.Faire revenir la chair des courgettes dans 25cl d'Huile d'olives. Ajouter l'oignon puis la viande hachée. Mettre la farce dans les courgettes. Ajouter le coulis de tomates. Mettre au four pendant 30 minutes. Avant la fin de la cuisson ajouter le fromage râpé",
     appliance: 'Four',
     ustensils: ['couteau', 'cuillère en bois', 'poêle à frire']
   },

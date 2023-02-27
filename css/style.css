@@ -11,7 +11,7 @@
     --color3: #ED6454;
     --color1_hover: #245fb3;
     --color2_hover: #438c6b;
-    --color3_hover: #a14338;
+    --color3_hover: #b34c3e;
     --cardBackground: #C7BEBE;
     --recipeBackground: #e7e7e7;
 }
@@ -73,10 +73,11 @@ header h1 {
     font-family: 'lato', 'sans-serif';
     font-weight: 700;
     pointer-events: none;
+    z-index: 10;
 }
 
-#searchZoneTexte:focus~label,
-#searchZoneTexte:valid~label {
+#searchZoneTexte:focus+label,
+#searchZoneTexte:valid+label {
     color: #000;
     background-color: #e7e7e7;
     transform: translateY(-35px) translateX(-20px) scale(0.8);
@@ -161,6 +162,8 @@ header h1 {
     pointer-events: none;
     font-family: 'lato', 'sans-serif';
     font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .inputFilter:focus~.inputLabel,
@@ -227,14 +230,6 @@ header h1 {
 #ustensiles .itemListe:hover {
     background-color: var(--color3_hover);
 }
-
-/* .listbox:hover {
-    opacity: 0.8;
-}
-
-.itemListe:hover {
-    opacity: 0.8;
-} */
 
 #tagZone {
     position: relative;
