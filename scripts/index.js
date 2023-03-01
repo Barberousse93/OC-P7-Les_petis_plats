@@ -356,12 +356,9 @@ function filterRecipe(findValue, listeRecettes) {
     if (listeRecettes[i].name.toUpperCase().match(findValue.toUpperCase())) { trouve = true }
     // Recherche dans les ingrédients
     for (let j = 0; j < listeRecettes[i].ingredients.length; j++) {
-      console.log('listeRecettes[i].ingredients.ingredient[j]')
-      console.log(listeRecettes[i].ingredients[j].ingredient)
       if (listeRecettes[i].ingredients[j].ingredient.toUpperCase().match(findValue.toUpperCase())) { trouve = true }
     }
     if (trouve === true) { filteredRecipes.push(listeRecettes[i]) }
-    console.log(filteredRecipes)
   }
 
   // filteredRecipes = listeRecettes.filter((recette) => recette.name.toUpperCase().includes(findValue.toUpperCase()) ||
