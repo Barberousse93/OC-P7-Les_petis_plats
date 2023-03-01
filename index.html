@@ -19,14 +19,13 @@
         <img src="./assets/logo/logo.png" alt="Logo Les Petits Plats" class="logo">
         <H1>Les Petits Plats</H1>
     </header>
-    <section class="searchZone">
+    <div class="searchZone">
         <div class="inputZone">
             <input id="searchZoneTexte" type="text" class="inputText" required>
             <label for="searchZoneTexte">Rechercher une recette</label>
             <img class="searchImg" src="./assets/icones/search.png" alt="">
         </div>
         <div id="tagZone"> </div>
-        </div>
         <div id="listBoxZone">
             <div id="ingredients" class="listbox color1">Ingredients
                 <span class="dropdownIcone"></span>
@@ -66,11 +65,11 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="message hidden">Aucune recette ne correspond à votre critère… vous pouvez
-        chercher « tarte aux pommes », « poisson », etc.</section>
+    </div>
+    <div class="message hidden">Aucune recette ne correspond à votre critère… vous pouvez
+        chercher « tarte aux pommes », « poisson », etc.</div>
     <main>
-        <article class="card">
+        <div class="card">
             <div class="cadre"></div>
             <div class="recipe">
                 <div class="recipeheader">
@@ -101,7 +100,7 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </div>
     </main>
     <!-- <script type="module" src="./scripts/utils/arrays.js"></script>
     <script type="module" src="./data/recipes.js"></script> -->
