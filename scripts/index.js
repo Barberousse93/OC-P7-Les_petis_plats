@@ -118,6 +118,7 @@ searchZoneText.addEventListener('input', () => {
   }
 })
 //* *********************************************************** *//
+
 //* *********************************************************** *//
 // Evenement input sur inputBox des listes filtre
 const inputIng = document.querySelector('#inputIng')
@@ -211,6 +212,16 @@ inputUst.addEventListener('input', () => {
       ustensilsList.appendChild(tagLI)
     }
   }
+})
+//* *********************************************************** *//
+
+//* *********************************************************** *//
+// Bloquer la fermeture des listes si click hors l'input
+const filterZoneInput = document.querySelectorAll('.filterZoneInput ')
+filterZoneInput.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    e.stopPropagation()
+  })
 })
 //* *********************************************************** *//
 
