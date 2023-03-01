@@ -214,6 +214,16 @@ inputUst.addEventListener('input', () => {
 })
 //* *********************************************************** *//
 
+//* *********************************************************** *//
+// Bloquer la fermeture des listes si click hors l'input
+const filterZoneInput = document.querySelectorAll('.filterZoneInput ')
+filterZoneInput.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    e.stopPropagation()
+  })
+})
+//* *********************************************************** *//
+
 // let filteredIngredients = [...new Set(recipes.map((recette) => recette.ingredients))]
 // filteredIngredients = [...new Set(filteredIngredients.map(([{ ingredient }]) => ingredient))].sort((a, b) => a.localeCompare(b))
 // const filteredAppliance = [...new Set(recipes.map((recette) => recette.appliance))].map((appliance) => appliance).sort((a, b) => a.localeCompare(b))

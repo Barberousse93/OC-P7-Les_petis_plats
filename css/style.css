@@ -46,7 +46,7 @@ header h1 {
     margin: auto;
 }
 
-.searchZone label {
+.inputZone label {
     position: absolute;
     left: 10%;
     color: #C7BEBE;
@@ -71,7 +71,8 @@ header h1 {
     background-color: #e7e7e7;
     padding-left: 10px;
     font-family: 'lato', 'sans-serif';
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 #searchZoneTexte:focus~label,
@@ -147,7 +148,6 @@ header h1 {
     width: 600px;
     left: -10px;
     border-top-right-radius: 5px;
-    padding-top: 10px;
 }
 
 .inputFilter {
@@ -166,14 +166,25 @@ header h1 {
 
 .inputFilter:focus~.inputLabel,
 .inputFilter:valid~.inputLabel {
-    transform: translateY(-25px) translateX(-45px) scale(0.8);
+    transform: translateY(-25px) translateX(-30px) scale(0.8);
+    animation: opacity 0.3s forwards
+}
+
+@keyframes opacity {
+    100% {
+        opacity: 1;
+    }
 }
 
 #ZoneinputIng .inputLabel,
 #ZoneinputApp .inputLabel,
 #ZoneinputUst .inputLabel {
+    position: absolute;
+    left: 50px;
     color: #fff;
+    opacity: 0.5;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 #inputIng:hover,
@@ -273,6 +284,7 @@ main {
     width: 380px;
     height: 384px;
     background-color: var(--cardBackground);
+    border-radius: 5px;
 }
 
 .recipe {
@@ -284,11 +296,13 @@ main {
     height: 206px;
     background-color: var(--recipeBackground);
     bottom: 0;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .cadre {
     height: 178px;
     background-color: var(--cardBackground);
+    border-radius: 5px 5px 0px 0px;
 }
 
 .recipeheader {
