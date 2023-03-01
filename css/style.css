@@ -72,12 +72,10 @@ header h1 {
     padding-left: 10px;
     font-family: 'lato', 'sans-serif';
     font-weight: 700;
-    pointer-events: none;
-    z-index: 10;
 }
 
-#searchZoneTexte:focus+label,
-#searchZoneTexte:valid+label {
+#searchZoneTexte:focus~label,
+#searchZoneTexte:valid~label {
     color: #000;
     background-color: #e7e7e7;
     transform: translateY(-35px) translateX(-20px) scale(0.8);
@@ -160,7 +158,6 @@ header h1 {
     border: none;
     background-color: inherit;
     cursor: pointer;
-    pointer-events: none;
     font-family: 'lato', 'sans-serif';
     font-weight: 700;
     color: #fff;
