@@ -1,7 +1,7 @@
 /* eslint-disable space-before-function-paren */
 export function makeRecipeCard(recette) {
   const main = document.querySelector('main')
-  const card = document.createElement('article')
+  const card = document.createElement('div')
   card.classList.add('card')
   const cadre = document.createElement('div')
   cadre.classList.add('cadre')
