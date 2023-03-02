@@ -143,6 +143,8 @@ inputIng.addEventListener('input', () => {
       })
       ingredientsList.appendChild(tagLI)
     }
+  } else if (inputIng.value.length === 0) {
+    ListeIngredients(filteredRecipes)
   }
 })
 
@@ -174,6 +176,8 @@ inputApp.addEventListener('input', () => {
       })
       applianceList.appendChild(tagLI)
     }
+  } else if (inputApp.value.length === 0) {
+    ListeApareils(filteredRecipes)
   }
 })
 
@@ -205,6 +209,8 @@ inputUst.addEventListener('input', () => {
       })
       ustensilsList.appendChild(tagLI)
     }
+  } else if (inputUst.value.length === 0) {
+    ListeUstensiles(filteredRecipes)
   }
 })
 //* *********************************************************** *//
