@@ -140,7 +140,6 @@ searchZoneText.addEventListener('input', () => {
 
 //* *********************************************************** *//
 // Evenement input sur inputBox des listes filtre
-const inputIng = document.querySelector('#inputIng')
 inputIng.addEventListener('input', () => {
   if (inputIng.value.length > 2) {
     const tampon = []
@@ -173,7 +172,6 @@ inputIng.addEventListener('input', () => {
   }
 })
 
-const inputApp = document.querySelector('#inputApp')
 inputApp.addEventListener('input', () => {
   if (inputApp.value.length > 2) {
     const tampon = []
@@ -206,7 +204,6 @@ inputApp.addEventListener('input', () => {
   }
 })
 
-const inputUst = document.querySelector('#inputUst')
 inputUst.addEventListener('input', () => {
   if (inputUst.value.length > 2) {
     const tampon = []
