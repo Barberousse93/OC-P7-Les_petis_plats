@@ -18,6 +18,25 @@ const filterTags = {
   app: [],
   ust: []
 }
+
+//* *********************************************************** *//
+// Ajout de l'event change sur les input des listes pour gérér les effacements de zone
+const inputUst = document.querySelector('#inputUst')
+inputUst.addEventListener('change', () => {
+  ListeUstensiles(filteredRecipes)
+})
+
+const inputIng = document.querySelector('#inputIng')
+inputIng.addEventListener('change', () => {
+  ListeIngredients(filteredRecipes)
+})
+
+const inputApp = document.querySelector('#inputApp')
+inputApp.addEventListener('change', () => {
+  ListeApareils(filteredRecipes)
+})
+//* *********************************************************** *//
+
 //* *********************************************************** *//
 // Ajout des Event 'click' sur les entêtes de liste de filtres
 const ingredientsButton = document.querySelector('#ingredients')
@@ -47,18 +66,12 @@ ingredientsButton.addEventListener('click', () => {
     spanApp.classList.add('dropdownIcone')
     spanApp.classList.remove('dropupIcone')
     inputApp.value = ''
-    inputApp.addEventListener('change', () => {
-      ListeApareils(filteredRecipes)
-    })
   }
   if (!ustensilsList.classList.contains('hidden')) {
     ustensilsList.classList.add('hidden')
     spanUst.classList.add('dropdownIcone')
     spanUst.classList.remove('dropupIcone')
     inputUst.value = ''
-    inputUst.addEventListener('change', () => {
-      ListeUstensiles(filteredRecipes)
-    })
   }
 })
 
@@ -78,18 +91,12 @@ applianceButton.addEventListener('click', () => {
     spanIng.classList.add('dropdownIcone')
     spanIng.classList.remove('dropupIcone')
     inputIng.value = ''
-    inputIng.addEventListener('change', () => {
-      ListeIngredients(filteredRecipes)
-    })
   }
   if (!ustensilsList.classList.contains('hidden')) {
     ustensilsList.classList.add('hidden')
     spanUst.classList.add('dropdownIcone')
     spanUst.classList.remove('dropupIcone')
     inputUst.value = ''
-    inputUst.addEventListener('change', () => {
-      ListeUstensiles(filteredRecipes)
-    })
   }
 })
 
@@ -109,18 +116,12 @@ ustensilsButton.addEventListener('click', () => {
     spanIng.classList.add('dropdownIcone')
     spanIng.classList.remove('dropupIcone')
     inputIng.value = ''
-    inputIng.addEventListener('change', () => {
-      ListeIngredients(filteredRecipes)
-    })
   }
   if (!appliancesList.classList.contains('hidden')) {
     appliancesList.classList.add('hidden')
     spanApp.classList.add('dropdownIcone')
     spanApp.classList.remove('dropupIcone')
     inputApp.value = ''
-    inputApp.addEventListener('change', () => {
-      ListeApareils(filteredRecipes)
-    })
   }
 })
 //* *********************************************************** *//
