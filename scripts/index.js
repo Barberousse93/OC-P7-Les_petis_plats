@@ -3,12 +3,6 @@ import { recipes } from '../data/recipes.js'
 import { makeRecipeCard } from './constructors/cards.js'
 import { sortRecipes } from './utils/arrays.js'
 
-// to do liste :
-// fonction fitre sur input avec parmetre tableau à filter + valeur de recherche : copie du tableau + filtrage du tableau + revoi le tableau filtré
-// fonction filtre tags  parametres tableau à filtrer + tableau des tags actifs : copie du tableau + boucle for + filtre sur chaque tag + renvoi du tableau filtré
-// refactoriser fitre sur tags avec en paramètre tableau à filtrer + type de tag + valeur du tag
-// fonction d'afichage paramètre tableau filtré + mise à jour des listbox
-
 // tri des recettes par odre croissant de nom
 sortRecipes(recipes)
 
@@ -225,12 +219,6 @@ filterZoneInput.forEach((item) => {
 })
 //* *********************************************************** *//
 
-// let filteredIngredients = [...new Set(recipes.map((recette) => recette.ingredients))]
-// filteredIngredients = [...new Set(filteredIngredients.map(([{ ingredient }]) => ingredient))].sort((a, b) => a.localeCompare(b))
-// const filteredAppliance = [...new Set(recipes.map((recette) => recette.appliance))].map((appliance) => appliance).sort((a, b) => a.localeCompare(b))
-// let filteredUstenils = [...new Set(recipes.map((recette) => recette.ustensils))]
-// filteredUstenils = [...new Set(filteredUstenils.map(([ustensil]) => ustensil))].sort((a, b) => a.localeCompare(b))
-
 // Fitrer les ingrédients dans la liste en cours des recettes
 // (filtre sur les tags)
 function ListeIngredients(ListeRecettes) {
@@ -321,7 +309,6 @@ function ListeUstensiles(ListeRecettes) {
         filterRecipeByUstensil(tagLI.innerText, ListeRecettes)
         makeTagButton(tagLI)
       }
-      // console.log(filterTags)
     })
     ustensilsList.appendChild(tagLI)
   }
