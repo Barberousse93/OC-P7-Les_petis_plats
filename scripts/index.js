@@ -46,11 +46,19 @@ ingredientsButton.addEventListener('click', () => {
     appliancesList.classList.add('hidden')
     spanApp.classList.add('dropdownIcone')
     spanApp.classList.remove('dropupIcone')
+    inputApp.value = ''
+    inputApp.addEventListener('change', () => {
+      ListeApareils(filteredRecipes)
+    })
   }
   if (!ustensilsList.classList.contains('hidden')) {
     ustensilsList.classList.add('hidden')
     spanUst.classList.add('dropdownIcone')
     spanUst.classList.remove('dropupIcone')
+    inputUst.value = ''
+    inputUst.addEventListener('change', () => {
+      ListeUstensiles(filteredRecipes)
+    })
   }
 })
 
@@ -69,11 +77,19 @@ applianceButton.addEventListener('click', () => {
     ingredientsList.classList.add('hidden')
     spanIng.classList.add('dropdownIcone')
     spanIng.classList.remove('dropupIcone')
+    inputIng.value = ''
+    inputIng.addEventListener('change', () => {
+      ListeIngredients(filteredRecipes)
+    })
   }
   if (!ustensilsList.classList.contains('hidden')) {
     ustensilsList.classList.add('hidden')
     spanUst.classList.add('dropdownIcone')
     spanUst.classList.remove('dropupIcone')
+    inputUst.value = ''
+    inputUst.addEventListener('change', () => {
+      ListeUstensiles(filteredRecipes)
+    })
   }
 })
 
@@ -92,11 +108,19 @@ ustensilsButton.addEventListener('click', () => {
     ingredientsList.classList.add('hidden')
     spanIng.classList.add('dropdownIcone')
     spanIng.classList.remove('dropupIcone')
+    inputIng.value = ''
+    inputIng.addEventListener('change', () => {
+      ListeIngredients(filteredRecipes)
+    })
   }
   if (!appliancesList.classList.contains('hidden')) {
     appliancesList.classList.add('hidden')
     spanApp.classList.add('dropdownIcone')
     spanApp.classList.remove('dropupIcone')
+    inputApp.value = ''
+    inputApp.addEventListener('change', () => {
+      ListeApareils(filteredRecipes)
+    })
   }
 })
 //* *********************************************************** *//
