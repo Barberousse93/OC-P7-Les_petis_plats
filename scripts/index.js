@@ -356,7 +356,7 @@ function filterRecipe(findValue, listeRecettes) {
 
 // Filtre uniquement sur les ingrédients
 function filterRecipeByIngredient(findValue, listeRecettes) {
-  filteredRecipes = listeRecettes.filter((recette) => recette.ingredients.find((ing) => ing.ingredient.toUpperCase().includes(findValue.toUpperCase())))
+  filteredRecipes = listeRecettes.filter((recette) => recette.ingredients.find((ing) => ing.ingredient.toUpperCase() === findValue.toUpperCase()))
 
   recipesCards(filteredRecipes)
   ListeIngredients(filteredRecipes)
@@ -366,7 +366,7 @@ function filterRecipeByIngredient(findValue, listeRecettes) {
 
 // Filtre uniquement sur les apareils
 function filterRecipeByAppliance(findValue, listeRecettes) {
-  filteredRecipes = listeRecettes.filter((recette) => recette.appliance.toUpperCase().includes(findValue.toUpperCase()))
+  filteredRecipes = listeRecettes.filter((recette) => recette.appliance.toUpperCase() === findValue.toUpperCase())
   recipesCards(filteredRecipes)
   ListeIngredients(filteredRecipes)
   ListeApareils(filteredRecipes)
@@ -375,7 +375,7 @@ function filterRecipeByAppliance(findValue, listeRecettes) {
 
 // Filtre uniquement sur les ustensiles
 function filterRecipeByUstensil(findValue, listeRecettes) {
-  filteredRecipes = listeRecettes.filter((recette) => recette.ustensils.find((ust) => ust.toUpperCase().includes(findValue.toUpperCase())))
+  filteredRecipes = listeRecettes.filter((recette) => recette.ustensils.find((ust) => ust.toUpperCase() === findValue.toUpperCase()))
   recipesCards(filteredRecipes)
   ListeIngredients(filteredRecipes)
   ListeApareils(filteredRecipes)
