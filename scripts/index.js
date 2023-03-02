@@ -18,6 +18,25 @@ const filterTags = {
   app: [],
   ust: []
 }
+
+//* *********************************************************** *//
+// Ajout de l'event change sur les input des listes pour gérér les effacements de zone
+const inputUst = document.querySelector('#inputUst')
+inputUst.addEventListener('change', () => {
+  ListeUstensiles(filteredRecipes)
+})
+
+const inputIng = document.querySelector('#inputIng')
+inputIng.addEventListener('change', () => {
+  ListeIngredients(filteredRecipes)
+})
+
+const inputApp = document.querySelector('#inputApp')
+inputApp.addEventListener('change', () => {
+  ListeApareils(filteredRecipes)
+})
+//* *********************************************************** *//
+
 //* *********************************************************** *//
 // Ajout des Event 'click' sur les entêtes de liste de filtres
 const ingredientsButton = document.querySelector('#ingredients')
@@ -46,11 +65,13 @@ ingredientsButton.addEventListener('click', () => {
     appliancesList.classList.add('hidden')
     spanApp.classList.add('dropdownIcone')
     spanApp.classList.remove('dropupIcone')
+    inputApp.value = ''
   }
   if (!ustensilsList.classList.contains('hidden')) {
     ustensilsList.classList.add('hidden')
     spanUst.classList.add('dropdownIcone')
     spanUst.classList.remove('dropupIcone')
+    inputUst.value = ''
   }
 })
 
@@ -69,11 +90,13 @@ applianceButton.addEventListener('click', () => {
     ingredientsList.classList.add('hidden')
     spanIng.classList.add('dropdownIcone')
     spanIng.classList.remove('dropupIcone')
+    inputIng.value = ''
   }
   if (!ustensilsList.classList.contains('hidden')) {
     ustensilsList.classList.add('hidden')
     spanUst.classList.add('dropdownIcone')
     spanUst.classList.remove('dropupIcone')
+    inputUst.value = ''
   }
 })
 
@@ -92,11 +115,13 @@ ustensilsButton.addEventListener('click', () => {
     ingredientsList.classList.add('hidden')
     spanIng.classList.add('dropdownIcone')
     spanIng.classList.remove('dropupIcone')
+    inputIng.value = ''
   }
   if (!appliancesList.classList.contains('hidden')) {
     appliancesList.classList.add('hidden')
     spanApp.classList.add('dropdownIcone')
     spanApp.classList.remove('dropupIcone')
+    inputApp.value = ''
   }
 })
 //* *********************************************************** *//
@@ -114,7 +139,6 @@ searchZoneText.addEventListener('input', () => {
 //* *********************************************************** *//
 //* *********************************************************** *//
 // Evenement input sur inputBox des listes filtre
-const inputIng = document.querySelector('#inputIng')
 inputIng.addEventListener('input', () => {
   if (inputIng.value.length > 2) {
     const tampon = []
@@ -147,7 +171,6 @@ inputIng.addEventListener('input', () => {
   }
 })
 
-const inputApp = document.querySelector('#inputApp')
 inputApp.addEventListener('input', () => {
   if (inputApp.value.length > 2) {
     const tampon = []
@@ -180,7 +203,6 @@ inputApp.addEventListener('input', () => {
   }
 })
 
-const inputUst = document.querySelector('#inputUst')
 inputUst.addEventListener('input', () => {
   if (inputUst.value.length > 2) {
     const tampon = []
