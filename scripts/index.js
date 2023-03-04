@@ -420,7 +420,7 @@ function makeTagButton(bouton) {
     tagButton.setAttribute('data-index', bouton.getAttribute('data-index'))
     const closeImg = document.createElement('img')
     closeImg.classList.add('closeImg')
-    closeImg.setAttribute('src', './assets/icones/suppr.png')
+    closeImg.setAttribute('src', '../assets/icones/suppr.png')
     tagButton.addEventListener('click', () => {
       const couleur = tagButton.classList[1]
       switch (couleur) {
