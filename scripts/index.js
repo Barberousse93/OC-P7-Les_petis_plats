@@ -19,26 +19,11 @@ const filterTags = {
   ust: []
 }
 
-// //* *********************************************************** *//
-// // Ajout de l'event change sur les input des listes pour gérér les effacements de zone
-const inputUst = document.querySelector('#inputUst')
-// inputUst.addEventListener('change', () => {
-//   ListeUstensiles(filteredRecipes)
-// })
-
-const inputIng = document.querySelector('#inputIng')
-// inputIng.addEventListener('change', () => {
-//   ListeIngredients(filteredRecipes)
-// })
-
-const inputApp = document.querySelector('#inputApp')
-// inputApp.addEventListener('change', () => {
-//   ListeApareils(filteredRecipes)
-// })
-// //* *********************************************************** *//
-
 //* *********************************************************** *//
 // Ajout des Event 'click' sur les entêtes de liste de filtres
+const inputIng = document.querySelector('#inputIng')
+const inputApp = document.querySelector('#inputApp')
+const inputUst = document.querySelector('#inputUst')
 const ingredientsButton = document.querySelector('#ingredients')
 const ingredientsList = document.querySelector('#blocListeIngredients')
 const spanIng = ingredientsButton.querySelector('span')
